@@ -1,0 +1,6 @@
+Product_Controller
+1. Get a Product
+2. Add a Product
+3. Get one Product
+4. Rate product
+5. Filter product
