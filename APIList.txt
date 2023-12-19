@@ -1,6 +1,15 @@
 Product_Controller
-1. Get a Product
-2. Add a Product
-3. Get one Product
+1. Get a Product - Done
+2. Add a Product - Done
+3. Get one Product - Done
 4. Rate product
-5. Filter product
+5. Filter product -Done
+
+Cart
+6. Add items to cart
+7. Remove items from cart
+8. Get Items of cart
+
+User
+9. Signup - Email, Name, Password, TypeOfUser(Customer, Seller) 
+10. Signin- Email, Password

@@ -37,7 +37,7 @@ export default class ProductController{
 
     filterProducts(req,res){
         const {minPrice, maxPrice, category} = req.query;
-        // console.log(req.query)
+        console.log(req.query)
         const result = ProductModel.filter(minPrice, maxPrice, category)
         return res.status(200).send(result)
     }
