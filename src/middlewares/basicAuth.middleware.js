@@ -17,7 +17,7 @@ const basicAuthorizer = (req, res, next)=>{
 
     //3.  Decode credentials
 
-    const decodedCreds = Buffer.from(base64Credentials, "base64").toString("utf8");
+    const decodedCreds = Buffer.from(base64Credentials, "base64").toString("utf-8");
     console.log(decodedCreds, typeof(decodedCreds))   // "username:password"
     const creds = decodedCreds.split(":");
     const [email, password] = creds
