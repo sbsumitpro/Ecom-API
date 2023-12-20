@@ -11,5 +11,5 @@ Cart
 8. Get Items of cart
 
 User
-9. Signup - Email, Name, Password, TypeOfUser(Customer, Seller) 
-10. Signin- Email, Password
+9. Signup - Email, Name, Password, TypeOfUser(Customer, Seller) - Done
+10. Signin- Email, Password - Done
