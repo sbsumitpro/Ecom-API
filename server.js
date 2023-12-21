@@ -1,10 +1,13 @@
 // 1. Import Express
 import bodyParser from "body-parser";
 import express from "express";
+import swagger from "swagger-ui-express";
 import productRouter from "./src/features/product/product.routes.js"
 import userRouter from "./src/features/user/user.routes.js"
+import cartItemRouter from "./src/features/cart/cart.routes.js"
 // import basicAuthorizer from "./src/middlewares/basicAuth.middleware.js";
 import jwtAuth from "./src/middlewares/jwt.middleware.js";
+import apiDocs from "./swagger.json" assert {type:"json"}; // without assert keyword it will give an error
 
 
 // 2. create server
@@ -12,12 +15,17 @@ const server = express();
 
 server.use(bodyParser.json())
 server.use(bodyParser.urlencoded({extended:false}))
+server.use("/api-docs",swagger.serve, swagger.setup(apiDocs))
 
 // For all request related to product redirect to product route
 // localhost:3200/api/products
 server.use("/api/products",
             jwtAuth,
             productRouter
+        );
+server.use("/api/cartItems",
+            jwtAuth,
+            cartItemRouter
         );
 server.use("/api/users",userRouter );
 

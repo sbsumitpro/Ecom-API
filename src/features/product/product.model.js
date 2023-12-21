@@ -44,13 +44,13 @@ export default class ProductModel{
       //validate user
       const user = UserModel.getAll().find(u=>u.id ==userID)
       if(!user){
-        return res.send("User not found")
+        throw new Error("User not found") ;
       }
 
       //validate product
       const product = products.find(p=>p.id == ProductID)
       if(!product){
-        return res.send("Product not found")
+        throw new Error("Product not found");
       }
 
       // Check if there is any rating, If no then add a rating array
@@ -79,9 +79,6 @@ export default class ProductModel{
           rating
         })
       }
-
-
-
     }
 }
 

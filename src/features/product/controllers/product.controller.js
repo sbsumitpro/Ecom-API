@@ -15,7 +15,7 @@ export default class ProductController{
             name,
             price: parseFloat(price),
             sizes:sizes.split(","),
-            imgUrl: req.file.filename
+            imgUrl: req.file.filename 
         }
         ProductModel.add(newProduct);
         res.status(201).send(newProduct)
@@ -23,13 +23,15 @@ export default class ProductController{
 
     rateProduct(req, res){
         const {userID, productID, rating} = req.query;
-        const error = ProductModel.rateProduct(userID, productID, rating);
 
-        if(error){
-            return res.status(400).send(error);
-        }else{
-            return res.status(200).send("Rating has been added.");
+        try{
+            const error = ProductModel.rateProduct(userID, productID, rating);
         }
+        catch(err){
+            return res.status(400).send(err.message);
+        }
+
+        return res.status(200).send("Rating has been added.");
 
     }
 
