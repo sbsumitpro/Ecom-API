@@ -1,0 +1,17 @@
+{"level":"info","message":"\n /api/products/rate?userID=2&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=20&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=20&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=2&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=2&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=2&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=2&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=2&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=2&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=2o&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=20&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=2&productID=20&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=20&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=20&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"\n /api/products/rate?userID=2&productID=2&rating=2 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"21/12/2023, 13:56:21 /api/cartItems/add?productID=2&quantity=4 -- : -- {}","service":"request-logging"}
+{"level":"info","message":"21/12/2023, 13:56:26 /api/products/rate?userID=2&productID=2&rating=2 -- : -- {}","service":"request-logging"}
